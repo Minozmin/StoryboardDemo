@@ -34,36 +34,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入需要传值的内容" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bpt-3d-eYW">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bpt-3d-eYW">
                                 <rect key="frame" x="20" y="164" width="335" height="21"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-4Z-2ld">
-                                <rect key="frame" x="130" y="245" width="114" height="30"/>
-                                <state key="normal" title="Main 跳转并传值"/>
+                                <rect key="frame" x="156" y="245" width="62" height="30"/>
+                                <state key="normal" title="点我传值"/>
                                 <connections>
-                                    <segue destination="uhf-Td-cV5" kind="show" identifier="FirstSegue" id="qNT-UT-rX7"/>
+                                    <segue destination="uhf-Td-cV5" kind="show" identifier="ValueSegue" id="qNT-UT-rX7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9h-JO-mSF">
-                                <rect key="frame" x="121" y="335" width="133" height="30"/>
-                                <state key="normal" title="Second 跳转并传值"/>
+                                <rect key="frame" x="125" y="335" width="124" height="30"/>
+                                <state key="normal" title="跳转到另外一个sb"/>
                                 <connections>
-                                    <segue destination="n6o-BG-6Hi" kind="show" identifier="SecondSegue" id="cOv-4h-OFl"/>
+                                    <segue destination="yJo-X2-URv" kind="show" id="cOv-4h-OFl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Bpt-3d-eYW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4GV-Wo-aOW"/>
                             <constraint firstItem="b9h-JO-mSF" firstAttribute="top" secondItem="8hb-4Z-2ld" secondAttribute="bottom" constant="60" id="6eS-oD-TtX"/>
                             <constraint firstItem="Bpt-3d-eYW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="HaE-fd-u9A"/>
+                            <constraint firstItem="Bpt-3d-eYW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JwW-dK-FqE"/>
                             <constraint firstItem="8hb-4Z-2ld" firstAttribute="centerX" secondItem="Bpt-3d-eYW" secondAttribute="centerX" id="L4M-7m-pab"/>
                             <constraint firstItem="8hb-4Z-2ld" firstAttribute="top" secondItem="Bpt-3d-eYW" secondAttribute="bottom" constant="60" id="Sx4-oK-laO"/>
-                            <constraint firstItem="8hb-4Z-2ld" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOb-Zz-xXW"/>
                             <constraint firstItem="b9h-JO-mSF" firstAttribute="centerX" secondItem="8hb-4Z-2ld" secondAttribute="centerX" id="gE3-Oa-jAZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bpt-3d-eYW" secondAttribute="trailing" constant="20" id="zoU-1K-LbX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -105,28 +105,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5EC-r8-e1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="35"/>
+            <point key="canvasLocation" x="991" y="-130"/>
         </scene>
-        <!--Third View Controller-->
-        <scene sceneID="Fd1-2Y-ZYj">
+        <!--Second View Controller-->
+        <scene sceneID="UnQ-uU-KF2">
             <objects>
-                <viewController storyboardIdentifier="ThirdViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N3e-gw-uOz" customClass="ThirdViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="45X-NQ-WAn">
+                <viewController id="yJo-X2-URv" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0pg-B7-Ifh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="lfM-b0-n77"/>
+                        <viewLayoutGuide key="safeArea" id="D9Y-IC-Zwg"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fSx-MY-AZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1738" y="27"/>
-        </scene>
-        <!--Second-->
-        <scene sceneID="BGT-aa-P7k">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Second" id="n6o-BG-6Hi" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5EZ-nT-WTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0V-Iy-6Q0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="985" y="535"/>
         </scene>
